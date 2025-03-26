@@ -1,0 +1,32 @@
+{
+  "games": [
+    {
+      "id": "codenames",
+      "title": "Codenames",
+      "description": "Two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their codenames. The teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.",
+      "shortDescription": "A word-based party game where teams try to identify their agents using one-word clues.",
+      "imageUrl": "/images/games/codenames.jpg",
+      "playerCount": "4",
+      "categories": ["guessing", "fun"],
+      "types": ["cards"],
+      "duration": "mid",
+      "bggUrl": "https://boardgamegeek.com/boardgame/178900/codenames",
+      "addedDate": "2024-03-26",
+      "rating": 4.5
+    },
+    {
+      "id": "pandemic",
+      "title": "Pandemic",
+      "description": "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand. The game board shows several major population centers on Earth. On each turn, a player can use up to 4 actions to travel between cities, treat infected populaces, discover a cure, or build a research station. A deck of cards provides the players with these abilities, but the cards also include a growing, fatal number of Epidemic cards that accelerate and intensify the diseases' spread.",
+      "shortDescription": "A cooperative game where players work together to stop the spread of deadly diseases.",
+      "imageUrl": "/images/games/pandemic.jpg",
+      "playerCount": "4",
+      "categories": ["cooperation", "management"],
+      "types": ["board"],
+      "duration": "long",
+      "bggUrl": "https://boardgamegeek.com/boardgame/30549/pandemic",
+      "addedDate": "2024-03-26",
+      "rating": 4.7
+    }
+  ]
+} 
