@@ -7,11 +7,11 @@ interface GameCardProps {
 
 export default function GameCard({ game }: GameCardProps) {
   return (
-    <Link href={`/games/${game.id}`}>
+    <Link href={`/games/${game.slug}`}>
       <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200 border border-indigo-100 hover:border-indigo-200">
         <div className="relative h-32">
           <img
-            src={game.imageUrl}
+            src={game.image}
             alt={game.title}
             className="w-full h-full object-cover"
           />

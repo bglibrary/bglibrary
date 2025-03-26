@@ -1,4 +1,4 @@
-export type PlayerCount = '1' | '2' | '3' | '4' | '5' | '6+';
+export type PlayerCount = string;
 
 export type GameCategory =
   | 'speed'
@@ -12,7 +12,8 @@ export type GameCategory =
   | 'optimisation'
   | 'battle'
   | 'fold'
-  | 'observation';
+  | 'observation'
+  | 'knowledge';
 
 export type GameType =
   | 'board'
@@ -25,9 +26,10 @@ export type GameDuration = 'short' | 'mid' | 'long';
 
 export interface Game {
   id: string;
+  slug: string;
   title: string;
-  description: string;
-  imageUrl: string;
+  shortDescription: string;
+  image: string;
   playerCount: PlayerCount;
   categories: GameCategory[];
   types: GameType[];

@@ -49,6 +49,9 @@ export default function Home() {
       <div className="mb-6">
         <FilterBar filters={filters} onFilterChange={setFilters} />
       </div>
+      <div className="mb-4 text-sm text-gray-600">
+        Showing {filteredGames.length} of {gamesData.games.length} games
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {filteredGames.map((game) => (
           <GameCard key={game.id} game={game} />

@@ -2,6 +2,7 @@ import { GameCategory, GameType, GameDuration } from '@/types/Game';
 
 const CATEGORIES: GameCategory[] = ['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation'];
 const TYPES: GameType[] = ['board', 'cards', 'dice', 'fast_rules', 'cooperation'];
+const PLAYER_COUNTS = ['1', '2', '2 à 3', '2 à 4', '2 à 5', '2 à 6', '2 à 8', '2 à 10', '3 à 4', '3 à 5', '3 à 6', '4 à 6', '4 à 8', '5 à 8'];
 
 interface FilterBarProps {
   filters: {
@@ -65,12 +66,11 @@ export default function FilterBar({ filters, onFilterChange }: FilterBarProps) {
               className="px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
             >
               <option value="">All Players</option>
-              <option value="1">1 Player</option>
-              <option value="2">2 Players</option>
-              <option value="3">3 Players</option>
-              <option value="4">4 Players</option>
-              <option value="5">5 Players</option>
-              <option value="6+">6+ Players</option>
+              {PLAYER_COUNTS.map((count) => (
+                <option key={count} value={count}>
+                  {count} Players
+                </option>
+              ))}
             </select>
 
             <select

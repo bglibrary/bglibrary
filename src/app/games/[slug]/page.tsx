@@ -15,14 +15,8 @@ const durationMap: Record<GameDuration, string> = {
   long: "> 60 minutes",
 };
 
-export function generateStaticParams() {
-  return gamesData.games.map((game) => ({
-    slug: game.id,
-  }));
-}
-
 export default function GamePage({ params }: GamePageProps) {
-  const game = gamesData.games.find((g) => g.id === params.slug);
+  const game = gamesData.games.find((g) => g.slug === params.slug);
 
   if (!game) {
     notFound();
@@ -35,7 +29,7 @@ export default function GamePage({ params }: GamePageProps) {
           <div className="md:flex-shrink-0">
             <img
               className="h-48 w-full object-cover md:w-48"
-              src={game.imageUrl}
+              src={game.image}
               alt={game.title}
             />
           </div>
@@ -56,7 +50,7 @@ export default function GamePage({ params }: GamePageProps) {
               </div>
               <div>
                 <h2 className="text-sm font-semibold text-gray-500">Duration</h2>
-                <p className="text-gray-900">{durationMap[game.duration as GameDuration]}</p>
+                <p className="text-gray-900">{durationMap[game.duration]}</p>
               </div>
               <div>
                 <h2 className="text-sm font-semibold text-gray-500">Categories</h2>
@@ -69,7 +63,7 @@ export default function GamePage({ params }: GamePageProps) {
             </div>
             <div>
               <h2 className="text-sm font-semibold text-gray-500 mb-2">Description</h2>
-              <p className="text-gray-700 whitespace-pre-line">{game.description}</p>
+              <p className="text-gray-700 whitespace-pre-line">{game.shortDescription}</p>
             </div>
             {(game.rulesUrl || game.videoUrl) && (
               <div className="mt-6 space-y-2">
