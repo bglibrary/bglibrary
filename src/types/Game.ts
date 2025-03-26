@@ -1,4 +1,18 @@
-export type PlayerCount = string;
+export type PlayerCount =
+  | '1'
+  | '2'
+  | '2 à 3'
+  | '2 à 4'
+  | '2 à 5'
+  | '2 à 6'
+  | '2 à 8'
+  | '2 à 10'
+  | '3 à 4'
+  | '3 à 5'
+  | '3 à 6'
+  | '4 à 6'
+  | '4 à 8'
+  | '5 à 8';
 
 export type GameCategory =
   | 'speed'
