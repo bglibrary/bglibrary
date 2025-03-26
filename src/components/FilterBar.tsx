@@ -1,14 +1,25 @@
-import { GameCategory, GameType, GameDuration, PlayerCount } from '@/types/Game';
+import { GameCategory, GameType, GameDuration } from '@/types/Game';
 
 const CATEGORIES: GameCategory[] = ['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation'];
 const TYPES: GameType[] = ['board', 'cards', 'dice', 'fast_rules', 'cooperation'];
-const PLAYER_COUNTS: PlayerCount[] = ['1', '2', '2 à 3', '2 à 4', '2 à 5', '2 à 6', '2 à 8', '2 à 10', '3 à 4', '3 à 5', '3 à 6', '4 à 6', '4 à 8', '5 à 8'];
+
+const playerCountOptions = [
+  { value: 1, label: '1 joueur' },
+  { value: 2, label: '2 joueurs' },
+  { value: 3, label: '3 joueurs' },
+  { value: 4, label: '4 joueurs' },
+  { value: 5, label: '5 joueurs' },
+  { value: 6, label: '6 joueurs' },
+  { value: 7, label: '7 joueurs' },
+  { value: 8, label: '8 joueurs' },
+  { value: 9, label: 'Plus de 8 joueurs' }
+];
 
 interface FilterBarProps {
   searchTerm: string;
   onSearchChange: (value: string) => void;
-  selectedPlayerCount: PlayerCount | null;
-  onPlayerCountChange: (value: PlayerCount | null) => void;
+  selectedPlayerCount: number | null;
+  onPlayerCountChange: (value: number | null) => void;
   selectedCategories: GameCategory[];
   onCategoryChange: (categories: GameCategory[]) => void;
   selectedTypes: GameType[];
@@ -66,13 +77,13 @@ export default function FilterBar({
           <div className="flex flex-wrap gap-2">
             <select
               value={selectedPlayerCount || ''}
-              onChange={(e) => onPlayerCountChange(e.target.value as PlayerCount || null)}
+              onChange={(e) => onPlayerCountChange(e.target.value ? Number(e.target.value) : null)}
               className="px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
             >
               <option value="">Tous les joueurs</option>
-              {PLAYER_COUNTS.map((count) => (
-                <option key={count} value={count}>
-                  {count} joueurs
+              {playerCountOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
                 </option>
               ))}
             </select>

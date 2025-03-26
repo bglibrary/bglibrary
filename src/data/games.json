@@ -5,828 +5,1236 @@
       "title": "Catane",
       "slug": "catane",
       "image": "/images/games/catane.jpg",
-      "playerCount": "3 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Collecter des ressources et construire des colonies pour être le premier à atteindre 10 points de victoire.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 4
     },
     {
       "id": "andor1",
       "title": "Andor: Entrez dans la légende",
       "slug": "andor-entrez-dans-la-legende",
       "image": "/images/games/andor1.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "optimisation"],
-      "types": ["board", "cooperation"],
+      "categories": [
+        "adventure",
+        "optimisation"
+      ],
+      "types": [
+        "board",
+        "cooperation"
+      ],
       "duration": "long",
       "shortDescription": "Incarnez les héros Andor et partez à l'aventure pour protéger le royaume des forces du mal.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "andor2",
       "title": "Andor 2 : Le Voyage vers le Nord",
       "slug": "andor-2-le-voyage-vers-le-nord",
       "image": "/images/games/andor2.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "optimisation"],
-      "types": ["board", "cooperation"],
+      "categories": [
+        "adventure",
+        "optimisation"
+      ],
+      "types": [
+        "board",
+        "cooperation"
+      ],
       "duration": "long",
       "shortDescription": "Aider les héros à se frayer un chemin à travers les montagnes enneigées pour atteindre le Nord et sauver leur terre de l'obscurité qui la menace.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "andor3",
       "title": "Andor 3 : La Dernière Espoir",
       "slug": "andor-3-la-derniere-espoir",
       "image": "/images/games/andor3.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "optimisation"],
-      "types": ["board", "cooperation"],
+      "categories": [
+        "adventure",
+        "optimisation"
+      ],
+      "types": [
+        "board",
+        "cooperation"
+      ],
       "duration": "long",
       "shortDescription": "Aider les héros à sauver le château de l'assaut des ennemis et à rassembler les dernières forces pour affronter la créature qui menace Andor.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "crew-space",
       "title": "The Crew: en quête de la neuvième planète",
       "slug": "the-crew-en-quete-de-la-neuvieme-planete",
       "image": "/images/games/crew_space.png",
-      "playerCount": "2 à 5",
-      "categories": ["optimisation", "fold"],
-      "types": ["cards", "cooperation"],
+      "categories": [
+        "optimisation",
+        "fold"
+      ],
+      "types": [
+        "cards",
+        "cooperation"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de plis où chacun doit accomplir ses missions en remportant des cartes spécifiques dans ses plis.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "crew-submarine",
       "title": "The Crew: mission sous-marine",
       "slug": "the-crew-mission-sous-marine",
       "image": "/images/games/crew_submarine.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["optimisation", "fold"],
-      "types": ["cards", "cooperation"],
+      "categories": [
+        "optimisation",
+        "fold"
+      ],
+      "types": [
+        "cards",
+        "cooperation"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de plis où chacun doit accomplir ses missions en remportant des cartes spécifiques dans ses plis.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "dobble",
       "title": "Dobble",
       "slug": "dobble",
       "image": "/images/games/dobble.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["speed", "observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Être le premier à identifier le symbole commun entre deux cartes. Les cartes ont une image en commun, mais il faut être rapide pour la trouver avant les autres joueurs.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "6quiprend",
       "title": "6 qui prend",
       "slug": "6-qui-prend",
       "image": "/images/games/6quiprend.jpg",
-      "playerCount": "2 à 10",
-      "categories": ["optimisation", "luck"],
-      "types": ["cards"],
+      "categories": [
+        "optimisation",
+        "luck"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Poser vos cartes en évitant de prendre des têtes de taureaux. Mais attention de ne pas poser la 6ème carte !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 10
     },
     {
       "id": "welcome-2",
       "title": "Welcome to your new home",
       "slug": "welcome-to-your-new-home",
       "image": "/images/games/welcome.jpg",
-      "playerCount": "1 à 100",
-      "categories": ["optimisation"],
-      "types": ["cards"],
+      "categories": [
+        "optimisation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Construire la ville parfaite pour attirer des habitants, en dessinant des maisons et en marquant des points en fonction des aménagements de la ville.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 1,
+      "playerMax": 100
     },
     {
       "id": "bang",
       "title": "Bang",
       "slug": "bang",
       "image": "/images/games/bang.jpg",
-      "playerCount": "4 à 7",
-      "categories": ["bluff", "battle"],
-      "types": ["cards"],
+      "categories": [
+        "bluff",
+        "battle"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Avec le jeu Bang !, devenez Shérif, Hors-la-loi ou Renégat et triomphez de vos adversaires ! Un jeu de cartes à l'ambiance survoltée dans l'univers du Far West !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 4,
+      "playerMax": 7
     },
     {
       "id": "not-alone",
       "title": "Not Alone",
       "slug": "not-alone",
       "image": "/images/games/not_alone.jpg",
-      "playerCount": "2 à 7",
-      "categories": ["bluff", "battle"],
-      "types": ["board", "cards", "cooperation"],
+      "categories": [
+        "bluff",
+        "battle"
+      ],
+      "types": [
+        "board",
+        "cards",
+        "cooperation"
+      ],
       "duration": "mid",
       "shortDescription": "Un joueur incarne une créature extraterrestre chassant les autres joueurs, qui jouent des survivants échoués sur une planète inconnue, et doivent essayer de s'échapper avant d'être alienés.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 7
     },
     {
       "id": "guerre-moutons",
       "title": "La guerre des moutons",
       "slug": "la-guerre-des-moutons",
       "image": "/images/games/guerre_moutons.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Construisez votre propre étable et prenez possession de la colline pour gagner la guerre des moutons!",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "beyond-baker-street",
       "title": "Beyond Baker Street",
       "slug": "beyond-baker-street",
       "image": "/images/games/beyond_baker_street.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["optimisation"],
-      "types": ["cards", "cooperation"],
+      "categories": [
+        "optimisation"
+      ],
+      "types": [
+        "cards",
+        "cooperation"
+      ],
       "duration": "mid",
       "shortDescription": "Travaillez ensemble pour accumuler les indices et battre le fameux Sherlock Holmes !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "mysterium-park",
       "title": "Mysterium Park",
       "slug": "mysterium-park",
       "image": "/images/games/mysterium_park.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["guessing", "observation"],
-      "types": ["cards", "cooperation"],
+      "categories": [
+        "guessing",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "cooperation"
+      ],
       "duration": "mid",
       "shortDescription": "En tant que médiums, vous devez communiquer avec le fantôme et résoudre son meurtre pour libérer son âme de l'emprise du parc d'attractions hanté.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "codenames",
       "title": "Codenames",
       "slug": "codenames",
       "image": "/images/games/codenames.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["guessing"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "guessing"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu d'association d'idées où les joueurs doivent deviner les mots qui correspondent à leur équipe sans tomber dans les pièges des mots des autres équipes.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "monopoly-deal",
       "title": "Monopoly Deal",
       "slug": "monopoly-deal",
       "image": "/images/games/monopoly_deal.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["luck"],
-      "types": ["cards"],
+      "categories": [
+        "luck"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Obtenez des propriétés, des collections et des devises pour être le premier à atteindre 3 ensembles complets dans ce jeu de cartes tirés du célèbre jeu de plateau.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "dobble-sw",
       "title": "Dobble Star Wars",
       "slug": "dobble-star-wars",
       "image": "/images/games/dobble_sw.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["speed", "observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Une adaptation du jeu de rapidité Dobble avec des images de l'univers Star Wars.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "skyjo",
       "title": "Skyjo",
       "slug": "skyjo",
       "image": "/images/games/skyjo.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["luck", "optimisation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "luck",
+        "optimisation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Collectez le moins de points possible en échangeant vos cartes pour avoir la plus petite somme possible dans ce jeu de cartes amusant et addictif.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "jaipur",
       "title": "Jaipur",
       "slug": "jaipur",
       "image": "/images/games/jaipur.jpg",
-      "playerCount": "2",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "En tant que marchands, vous devez acheter les meilleurs ressources ou les trocker contre des chameaux. Un jeu de cartes rapide et stratégique.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 2
     },
     {
       "id": "jungle-speed",
       "title": "Jungle Speed",
       "slug": "jungle-speed",
       "image": "/images/games/jungle_speed.jpg",
-      "playerCount": "3 à 8",
-      "categories": ["speed", "observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de rapidité et d'observation où les joueurs doivent être les plus rapides à attraper le totem quand ils repèrent des cartes identiques.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 8
     },
     {
       "id": "7wonders",
       "title": "7 Wonders",
       "slug": "7-wonders",
       "image": "/images/games/7wonders.jpg",
-      "playerCount": "2 à 7",
-      "categories": ["management", "optimisation"],
-      "types": ["board", "cards"],
+      "categories": [
+        "management",
+        "optimisation"
+      ],
+      "types": [
+        "board",
+        "cards"
+      ],
       "duration": "long",
       "shortDescription": "Construisez votre civilisation en développant des ressources, en érigeant des merveilles et en établissant des relations commerciales avec vos voisins.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 7
     },
     {
       "id": "agricola",
       "title": "Agricola",
       "slug": "agricola",
       "image": "/images/games/agricola.jpg",
-      "playerCount": "1 à 5",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Développez votre ferme, cultivez des champs, élevez du bétail et nourrissez votre famille dans ce jeu de gestion agricole.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 1,
+      "playerMax": 5
     },
     {
       "id": "arche",
       "title": "L'Arche",
       "slug": "l-arche",
       "image": "/images/games/arche.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management", "cooperation"],
-      "types": ["board"],
+      "categories": [
+        "management",
+        "cooperation"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Coopérez pour construire l'arche et sauver les animaux avant que le déluge ne commence.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "bazar-bizarre",
       "title": "Bazar Bizarre",
       "slug": "bazar-bizarre",
       "image": "/images/games/bazar_bizarre.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["speed", "observation"],
-      "types": ["board", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "board",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Soyez le plus rapide à attraper les objets correspondant aux critères demandés dans ce jeu d'observation et de rapidité.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "blokus",
       "title": "Blokus",
       "slug": "blokus",
       "image": "/images/games/blokus.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["optimisation"],
-      "types": ["board"],
+      "categories": [
+        "optimisation"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Placez stratégiquement vos pièces de couleur sur le plateau en touchant uniquement les coins de vos pièces déjà placées.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "carcassonne-sud",
       "title": "Carcassonne : Le Sud",
       "slug": "carcassonne-le-sud",
       "image": "/images/games/carcassonne_sud.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Construisez le paysage méditerranéen en plaçant des tuiles et en positionnant vos meeples pour marquer des points.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "chess",
       "title": "Échecs",
       "slug": "echecs",
       "image": "/images/games/chess.jpg",
-      "playerCount": "2",
-      "categories": ["battle"],
-      "types": ["board"],
+      "categories": [
+        "battle"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Le jeu d'échecs classique, un jeu de stratégie millénaire où chaque pièce a ses propres règles de déplacement.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 2
     },
     {
       "id": "colt-express",
       "title": "Colt Express",
       "slug": "colt-express",
       "image": "/images/games/colt_express.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["adventure", "battle"],
-      "types": ["board"],
+      "categories": [
+        "adventure",
+        "battle"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Incarnez des bandits dans un train de l'Ouest sauvage, volez les passagers et évitez le shérif dans ce jeu d'action programmée.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "coloretto",
       "title": "Coloretto",
       "slug": "coloretto",
       "image": "/images/games/coloretto.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["optimisation"],
-      "types": ["cards"],
+      "categories": [
+        "optimisation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Collectez des cartes de différentes couleurs, mais attention à ne pas en avoir trop de la même couleur !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "concept",
       "title": "Concept",
       "slug": "concept",
       "image": "/images/games/concept.jpg",
-      "playerCount": "4 à 12",
-      "categories": ["guessing"],
-      "types": ["board"],
+      "categories": [
+        "guessing"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Faites deviner des mots en utilisant des icônes universelles sur un plateau de jeu.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 4,
+      "playerMax": 12
     },
     {
       "id": "dixit",
       "title": "Dixit",
       "slug": "dixit",
       "image": "/images/games/dixit.jpg",
-      "playerCount": "3 à 6",
-      "categories": ["guessing"],
-      "types": ["cards"],
+      "categories": [
+        "guessing"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Décrivez une carte de manière poétique et essayez de faire deviner votre carte tout en induisant les autres en erreur.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 6
     },
     {
       "id": "dice-town",
       "title": "Dice Town",
       "slug": "dice-town",
       "image": "/images/games/dice_town.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["luck", "battle"],
-      "types": ["board", "dice"],
+      "categories": [
+        "luck",
+        "battle"
+      ],
+      "types": [
+        "board",
+        "dice"
+      ],
       "duration": "mid",
       "shortDescription": "Lancez des dés pour construire votre main et devenir le plus riche cow-boy de la ville.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "evo",
       "title": "Evo",
       "slug": "evo",
       "image": "/images/games/evo.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Faites évoluer vos dinosaures en les adaptant aux changements climatiques et en les protégeant des prédateurs.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "fugi-fugi",
       "title": "Fugi Fugi",
       "slug": "fugi-fugi",
       "image": "/images/games/fugi_fugi.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["speed", "observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de rapidité où il faut être le plus rapide à identifier et attraper les cartes correspondant aux critères demandés.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "go",
       "title": "Go",
       "slug": "go",
       "image": "/images/games/go.jpg",
-      "playerCount": "2",
-      "categories": ["battle"],
-      "types": ["board"],
+      "categories": [
+        "battle"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Le jeu de Go, un jeu de stratégie asiatique millénaire où les joueurs tentent de capturer le territoire de l'adversaire.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 2
     },
     {
       "id": "hanabi",
       "title": "Hanabi",
       "slug": "hanabi",
       "image": "/images/games/hanabi.png",
-      "playerCount": "2 à 5",
-      "categories": ["cooperation"],
-      "types": ["cards"],
+      "categories": [
+        "cooperation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Coopérez pour créer le plus beau feu d'artifice en donnant des indices sur vos cartes sans pouvoir les voir.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "himalaya",
       "title": "Himalaya",
       "slug": "himalaya",
       "image": "/images/games/himalaya.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "management"],
-      "types": ["board"],
+      "categories": [
+        "adventure",
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Gérez votre expédition dans l'Himalaya en recrutant des sherpas et en gérant vos ressources pour atteindre le sommet.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "magic-maze",
       "title": "Magic Maze",
       "slug": "magic-maze",
       "image": "/images/games/magic_maze.png",
-      "playerCount": "1 à 8",
-      "categories": ["cooperation"],
-      "types": ["board"],
+      "categories": [
+        "cooperation"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Coopérez pour explorer le labyrinthe et récupérer vos objets avant que le temps ne s'écoule, sans pouvoir parler !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 1,
+      "playerMax": 8
     },
     {
       "id": "mysterium",
       "title": "Mysterium",
       "slug": "mysterium",
       "image": "/images/games/mysterium.jpg",
-      "playerCount": "2 à 7",
-      "categories": ["guessing", "cooperation"],
-      "types": ["board", "cards"],
+      "categories": [
+        "guessing",
+        "cooperation"
+      ],
+      "types": [
+        "board",
+        "cards"
+      ],
       "duration": "long",
       "shortDescription": "En tant que médiums, vous devez communiquer avec le fantôme et résoudre son meurtre en interprétant les indices qu'il vous donne.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 7
     },
     {
       "id": "notre-dame",
       "title": "Notre-Dame",
       "slug": "notre-dame",
       "image": "/images/games/notre_dame.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Gérez votre quartier de Paris au Moyen Âge en plaçant des personnages influents et en développant votre territoire.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "onitama",
       "title": "Onitama",
       "slug": "onitama",
       "image": "/images/games/onitama.jpg",
-      "playerCount": "2",
-      "categories": ["battle"],
-      "types": ["board"],
+      "categories": [
+        "battle"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu d'échecs abstrait où les mouvements possibles sont déterminés par des cartes qui circulent entre les joueurs.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 2
     },
     {
       "id": "oriflamme",
       "title": "Oriflamme",
       "slug": "oriflamme",
       "image": "/images/games/oriflamme.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["battle", "bluff"],
-      "types": ["cards"],
+      "categories": [
+        "battle",
+        "bluff"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Placez stratégiquement vos cartes pour conquérir le trône et devenir le nouveau roi de France.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "paleo",
       "title": "Paleo",
       "slug": "paleo",
       "image": "/images/games/paleo.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "cooperation"],
-      "types": ["board", "cards"],
+      "categories": [
+        "adventure",
+        "cooperation"
+      ],
+      "types": [
+        "board",
+        "cards"
+      ],
       "duration": "long",
       "shortDescription": "Survivez dans la préhistoire en coopérant pour chasser, cueillir et protéger votre tribu des dangers.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "panic-lab",
       "title": "Panic Lab",
       "slug": "panic-lab",
       "image": "/images/games/panic_lab.jpg",
-      "playerCount": "2 à 10",
-      "categories": ["speed", "observation"],
-      "types": ["board", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "board",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Soyez le plus rapide à trouver l'amibe qui correspond aux critères demandés dans ce jeu d'observation et de rapidité.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 10
     },
     {
       "id": "piliers-terre",
       "title": "Les Piliers de la Terre",
       "slug": "les-piliers-de-la-terre",
       "image": "/images/games/piliers_terre.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "long",
       "shortDescription": "Participez à la construction de la cathédrale de Kingsbridge en gérant vos ressources et en plaçant stratégiquement vos ouvriers.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "robin-hood",
       "title": "Robin des Bois",
       "slug": "robin-des-bois",
       "image": "/images/games/robin_hood.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "cooperation"],
-      "types": ["board"],
+      "categories": [
+        "adventure",
+        "cooperation"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Coopérez pour voler le shérif de Nottingham et redistribuer les richesses aux pauvres.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "roi-nains",
       "title": "Le Roi des Nains",
       "slug": "le-roi-des-nains",
       "image": "/images/games/roi_nains.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Gérez votre colonie de nains en exploitant les ressources de la montagne et en construisant votre royaume souterrain.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "saboteur",
       "title": "Saboteur",
       "slug": "saboteur",
       "image": "/images/games/saboteur.jpg",
-      "playerCount": "3 à 10",
-      "categories": ["bluff", "cooperation"],
-      "types": ["cards"],
+      "categories": [
+        "bluff",
+        "cooperation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Les nains cherchent de l'or, mais certains d'entre eux sont des saboteurs qui tentent d'empêcher la découverte du trésor.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 10
     },
     {
       "id": "shabadabada",
       "title": "Shabadabada",
       "slug": "shabadabada",
       "image": "/images/games/shabadabada.jpg",
-      "playerCount": "3 à 8",
-      "categories": ["fun"],
-      "types": ["cards"],
+      "categories": [
+        "fun"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de mots où il faut trouver des mots qui correspondent aux critères demandés.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 8
     },
     {
       "id": "sky-my-husband",
       "title": "Sky My Husband",
       "slug": "sky-my-husband",
       "image": "/images/games/sky_my_husband.jpg",
-      "playerCount": "3 à 8",
-      "categories": ["fun"],
-      "types": ["cards"],
+      "categories": [
+        "fun"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de devinettes où il faut trouver qui est le mari de qui en posant des questions.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 8
     },
     {
       "id": "sleeping-queens",
       "title": "Sleeping Queens",
       "slug": "sleeping-queens",
       "image": "/images/games/sleeping_queens.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["luck"],
-      "types": ["cards"],
+      "categories": [
+        "luck"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Réveillez les reines endormies et collectez des points dans ce jeu de cartes pour enfants.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "splendor",
       "title": "Splendor",
       "slug": "splendor",
       "image": "/images/games/splendor.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Devenez un marchand de la Renaissance en collectant des gemmes et en développant votre réseau commercial.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "speedy-words",
       "title": "Speedy Words",
       "slug": "speedy-words",
       "image": "/images/games/speedy_words.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["speed", "fun"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "fun"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Soyez le plus rapide à trouver des mots correspondant aux catégories demandées.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "sushi-go",
       "title": "Sushi Go",
       "slug": "sushi-go",
       "image": "/images/games/sushi_go.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["optimisation"],
-      "types": ["cards"],
+      "categories": [
+        "optimisation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Draftez des cartes de sushi pour créer la meilleure combinaison et marquer le plus de points.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "taboo-xxl",
       "title": "Taboo XXL",
       "slug": "taboo-xxl",
       "image": "/images/games/taboo_xxl.jpg",
-      "playerCount": "4 à 10",
-      "categories": ["guessing", "fun"],
-      "types": ["cards"],
+      "categories": [
+        "guessing",
+        "fun"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Faites deviner des mots à votre équipe sans utiliser les mots interdits.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 4,
+      "playerMax": 10
     },
     {
       "id": "thurn-taxis",
       "title": "Thurn und Taxis",
       "slug": "thurn-und-taxis",
       "image": "/images/games/thurn_taxis.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Créez des routes postales à travers l'Allemagne en plaçant stratégiquement vos bureaux de poste.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "tchin",
       "title": "Tchin",
       "slug": "tchin",
       "image": "/images/games/tchin.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["fun"],
-      "types": ["cards"],
+      "categories": [
+        "fun"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de cartes où il faut être le plus rapide à taper sur la table quand les conditions sont remplies.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "time-bomb",
       "title": "Time Bomb",
       "slug": "time-bomb",
       "image": "/images/games/time_bomb.jpg",
-      "playerCount": "4 à 8",
-      "categories": ["bluff", "cooperation"],
-      "types": ["cards"],
+      "categories": [
+        "bluff",
+        "cooperation"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "mid",
       "shortDescription": "Les résistants doivent identifier et arrêter les terroristes avant que la bombe n'explose.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 4,
+      "playerMax": 8
     },
     {
       "id": "timeline-se",
       "title": "Timeline : Sciences et Explorations",
       "slug": "timeline-sciences-et-explorations",
       "image": "/images/games/timeline_se.jpg",
-      "playerCount": "2 à 8",
-      "categories": ["knowledge"],
-      "types": ["cards"],
+      "categories": [
+        "knowledge"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Placez les événements historiques dans le bon ordre chronologique.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 8
     },
     {
       "id": "tropico",
       "title": "Tropico",
       "slug": "tropico",
       "image": "/images/games/tropico.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["management"],
-      "types": ["board"],
+      "categories": [
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Gérez votre île tropicale en développant son économie et en satisfaisant les besoins de vos habitants.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "twinz",
       "title": "Twinz",
       "slug": "twinz",
       "image": "/images/games/twinz.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Trouvez les paires de cartes identiques dans ce jeu de mémoire et d'observation.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "yams",
       "title": "Yams",
       "slug": "yams",
       "image": "/images/games/yams.jpg",
-      "playerCount": "1 à 10",
-      "categories": ["luck"],
-      "types": ["dice"],
+      "categories": [
+        "luck"
+      ],
+      "types": [
+        "dice"
+      ],
       "duration": "short",
       "shortDescription": "Lancez les dés pour obtenir les meilleures combinaisons et marquer le plus de points possible.",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 1,
+      "playerMax": 10
     },
     {
       "id": "canardage",
       "title": "Canardage",
       "slug": "canardage",
       "image": "/images/games/canardage.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["fun", "battle"],
-      "types": ["cards"],
+      "categories": [
+        "fun",
+        "battle"
+      ],
+      "types": [
+        "cards"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de cartes déjanté où vous devez être le dernier canard en vie en évitant les tirs des autres joueurs tout en les canardant !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "crique-pirates",
       "title": "La Crique des Pirates",
       "slug": "la-crique-des-pirates",
       "image": "/images/games/crique_pirates.jpg",
-      "playerCount": "2 à 4",
-      "categories": ["adventure", "management"],
-      "types": ["board"],
+      "categories": [
+        "adventure",
+        "management"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Devenez le plus riche pirate en explorant la crique, en collectant des trésors et en construisant votre empire maritime !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 4
     },
     {
       "id": "declic",
       "title": "Déclic",
       "slug": "declic",
       "image": "/images/games/declic.jpg",
-      "playerCount": "2 à 6",
-      "categories": ["speed", "observation"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "speed",
+        "observation"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de rapidité et d'observation où il faut être le plus rapide à repérer les combinaisons de symboles identiques !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 6
     },
     {
       "id": "fuse",
       "title": "Fuse",
       "slug": "fuse",
       "image": "/images/games/fuse.jpg",
-      "playerCount": "1 à 5",
-      "categories": ["speed", "optimisation"],
-      "types": ["dice", "cooperation"],
+      "categories": [
+        "speed",
+        "optimisation"
+      ],
+      "types": [
+        "dice",
+        "cooperation"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu coopératif en temps réel où vous devez désamorcer des bombes en utilisant des dés avant que le temps ne s'écoule !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 1,
+      "playerMax": 5
     },
     {
       "id": "moose",
       "title": "Moose in the House",
       "slug": "moose-in-the-house",
       "image": "/images/games/moose.jpg",
-      "playerCount": "2 à 5",
-      "categories": ["fun", "luck"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "fun",
+        "luck"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de cartes amusant où vous devez empêcher les élans d'envahir votre maison tout en les envoyant chez vos adversaires !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 5
     },
     {
       "id": "mr-jack",
       "title": "Mr. Jack",
       "slug": "mr-jack",
       "image": "/images/games/mr_jack.jpg",
-      "playerCount": "2",
-      "categories": ["bluff", "optimisation"],
-      "types": ["board"],
+      "categories": [
+        "bluff",
+        "optimisation"
+      ],
+      "types": [
+        "board"
+      ],
       "duration": "mid",
       "shortDescription": "Un jeu de déduction à deux joueurs où l'un incarne Jack l'Éventreur et l'autre les enquêteurs qui tentent de le capturer dans les rues de Londres !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 2,
+      "playerMax": 2
     },
     {
       "id": "niet",
       "title": "Niet!",
       "slug": "niet",
       "image": "/images/games/niet.jpg",
-      "playerCount": "3 à 6",
-      "categories": ["fun", "bluff"],
-      "types": ["cards", "fast_rules"],
+      "categories": [
+        "fun",
+        "bluff"
+      ],
+      "types": [
+        "cards",
+        "fast_rules"
+      ],
       "duration": "short",
       "shortDescription": "Un jeu de cartes rapide et amusant où il faut se débarrasser de ses cartes en évitant de dire 'Niet!' au mauvais moment !",
-      "addedDate": "2024-03-26"
+      "addedDate": "2024-03-26",
+      "playerMin": 3,
+      "playerMax": 6
     }
   ]
-} 
+}

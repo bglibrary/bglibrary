@@ -44,7 +44,8 @@ export interface Game {
   title: string;
   shortDescription: string;
   image: string;
-  playerCount: PlayerCount;
+  playerMin: number;
+  playerMax: number;
   categories: GameCategory[];
   types: GameType[];
   duration: GameDuration;

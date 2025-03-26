@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react';
 import GameCard from '@/components/GameCard';
 import FilterBar from '@/components/FilterBar';
 import gamesData from '@/data/games.json';
-import { Game, GameCategory, GameType, GameDuration, PlayerCount } from '@/types/Game';
+import { Game, GameCategory, GameType, GameDuration } from '@/types/Game';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedPlayerCount, setSelectedPlayerCount] = useState<PlayerCount | null>(null);
+  const [selectedPlayerCount, setSelectedPlayerCount] = useState<number | null>(null);
   const [selectedCategories, setSelectedCategories] = useState<GameCategory[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<GameType[]>([]);
   const [selectedDuration, setSelectedDuration] = useState<GameDuration | null>(null);
@@ -35,7 +35,8 @@ export default function Home() {
     const filtered = allGames.filter(game => {
       const matchesSearch = game.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         game.shortDescription.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesPlayerCount = !selectedPlayerCount || game.playerCount === selectedPlayerCount;
+      const matchesPlayerCount = !selectedPlayerCount || 
+        (game.playerMin <= selectedPlayerCount && game.playerMax >= selectedPlayerCount);
       const matchesCategories = selectedCategories.length === 0 || 
         selectedCategories.every(category => game.categories.includes(category));
       const matchesTypes = selectedTypes.length === 0 || 
