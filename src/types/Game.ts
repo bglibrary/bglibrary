@@ -27,16 +27,14 @@ export interface Game {
   id: string;
   title: string;
   description: string;
-  shortDescription: string;
   imageUrl: string;
   playerCount: PlayerCount;
   categories: GameCategory[];
   types: GameType[];
   duration: GameDuration;
   rulesUrl?: string;
-  bggUrl?: string;
+  videoUrl?: string;
   addedDate: string;
   lastPlayed?: string;
-  rating?: number;
   notes?: string;
 } 

@@ -1,114 +1,127 @@
-import { GameCategory, GameType, GameDuration, PlayerCount } from '@/types/Game';
+import { GameCategory, GameType, GameDuration } from '@/types/Game';
+
+const CATEGORIES: GameCategory[] = ['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation'];
+const TYPES: GameType[] = ['board', 'cards', 'dice', 'fast_rules', 'cooperation'];
 
 interface FilterBarProps {
-  selectedPlayers: PlayerCount | 'all';
-  selectedCategories: GameCategory[];
-  selectedTypes: GameType[];
-  selectedDurations: GameDuration[];
-  onPlayerChange: (player: PlayerCount | 'all') => void;
-  onCategoryChange: (category: GameCategory) => void;
-  onTypeChange: (type: GameType) => void;
-  onDurationChange: (duration: GameDuration) => void;
-  onReset: () => void;
+  filters: {
+    players: string;
+    categories: GameCategory[];
+    types: GameType[];
+    duration: GameDuration | '';
+    search: string;
+  };
+  onFilterChange: (filters: any) => void;
 }
 
-export default function FilterBar({
-  selectedPlayers,
-  selectedCategories,
-  selectedTypes,
-  selectedDurations,
-  onPlayerChange,
-  onCategoryChange,
-  onTypeChange,
-  onDurationChange,
-  onReset,
-}: FilterBarProps) {
+export default function FilterBar({ filters, onFilterChange }: FilterBarProps) {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onFilterChange({ ...filters, search: e.target.value });
+  };
+
+  const handleCategoryChange = (category: GameCategory) => {
+    onFilterChange({
+      ...filters,
+      categories: filters.categories.includes(category)
+        ? filters.categories.filter(c => c !== category)
+        : [...filters.categories, category],
+    });
+  };
+
+  const handleTypeChange = (type: GameType) => {
+    onFilterChange({
+      ...filters,
+      types: filters.types.includes(type)
+        ? filters.types.filter(t => t !== type)
+        : [...filters.types, type],
+    });
+  };
+
+  const handleDurationChange = (duration: GameDuration) => {
+    onFilterChange({
+      ...filters,
+      duration: filters.duration === duration ? '' : duration,
+    });
+  };
+
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md mb-6">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        {/* Players Filter */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Players</h3>
-          <div className="space-y-1">
-            {(['all', '1', '2', '3', '4', '5', '6+'] as const).map((player) => (
-              <label key={player} className="flex items-center space-x-2">
+    <div className="space-y-4">
+      <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-4 border border-indigo-100">
+        <div className="flex flex-wrap gap-4">
+          <div className="flex-1 min-w-[200px]">
+            <input
+              type="text"
+              placeholder="Search games..."
+              value={filters.search}
+              onChange={handleSearchChange}
+              className="w-full px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
+            />
+          </div>
+          
+          <div className="flex flex-wrap gap-2">
+            <select
+              value={filters.players}
+              onChange={(e) => onFilterChange({ ...filters, players: e.target.value })}
+              className="px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
+            >
+              <option value="">All Players</option>
+              <option value="1">1 Player</option>
+              <option value="2">2 Players</option>
+              <option value="3">3 Players</option>
+              <option value="4">4 Players</option>
+              <option value="5">5 Players</option>
+              <option value="6+">6+ Players</option>
+            </select>
+
+            <select
+              value={filters.duration}
+              onChange={(e) => handleDurationChange(e.target.value as GameDuration)}
+              className="px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
+            >
+              <option value="">All Durations</option>
+              <option value="short">Short (&lt; 30min)</option>
+              <option value="mid">Medium (30-60min)</option>
+              <option value="long">Long (&gt; 60min)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-4 border border-indigo-100">
+          <h3 className="text-sm font-medium text-indigo-700 mb-2">Categories</h3>
+          <div className="flex flex-wrap gap-2">
+            {CATEGORIES.map((category) => (
+              <label key={category} className="inline-flex items-center">
                 <input
-                  type="radio"
-                  name="players"
-                  value={player}
-                  checked={selectedPlayers === player}
-                  onChange={() => onPlayerChange(player)}
-                  className="form-radio"
+                  type="checkbox"
+                  checked={filters.categories.includes(category)}
+                  onChange={() => handleCategoryChange(category)}
+                  className="rounded text-indigo-600 focus:ring-indigo-500"
                 />
-                <span>{player === 'all' ? 'All' : player}</span>
+                <span className="ml-2 text-sm text-gray-700">{category}</span>
               </label>
             ))}
           </div>
         </div>
 
-        {/* Categories Filter */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Categories</h3>
-          <div className="space-y-1">
-            {(['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation'] as GameCategory[]).map((category) => (
-              <label key={category} className="flex items-center space-x-2">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-4 border border-indigo-100">
+          <h3 className="text-sm font-medium text-indigo-700 mb-2">Types</h3>
+          <div className="flex flex-wrap gap-2">
+            {TYPES.map((type) => (
+              <label key={type} className="inline-flex items-center">
                 <input
                   type="checkbox"
-                  checked={selectedCategories.includes(category)}
-                  onChange={() => onCategoryChange(category)}
-                  className="form-checkbox"
+                  checked={filters.types.includes(type)}
+                  onChange={() => handleTypeChange(type)}
+                  className="rounded text-indigo-600 focus:ring-indigo-500"
                 />
-                <span className="capitalize">{category.replace('_', ' ')}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        {/* Types Filter */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Types</h3>
-          <div className="space-y-1">
-            {(['board', 'cards', 'dice', 'fast_rules', 'cooperation'] as GameType[]).map((type) => (
-              <label key={type} className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  checked={selectedTypes.includes(type)}
-                  onChange={() => onTypeChange(type)}
-                  className="form-checkbox"
-                />
-                <span className="capitalize">{type.replace('_', ' ')}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        {/* Duration Filter */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Duration</h3>
-          <div className="space-y-1">
-            {(['short', 'mid', 'long'] as GameDuration[]).map((duration) => (
-              <label key={duration} className="flex items-center space-x-2">
-                <input
-                  type="checkbox"
-                  checked={selectedDurations.includes(duration)}
-                  onChange={() => onDurationChange(duration)}
-                  className="form-checkbox"
-                />
-                <span>
-                  {duration === 'short' ? '< 30min' : duration === 'mid' ? '30-60min' : '> 60min'}
-                </span>
+                <span className="ml-2 text-sm text-gray-700">{type}</span>
               </label>
             ))}
           </div>
         </div>
       </div>
-
-      <button
-        onClick={onReset}
-        className="mt-4 px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300 transition-colors"
-      >
-        Reset Filters
-      </button>
     </div>
   );
 } 

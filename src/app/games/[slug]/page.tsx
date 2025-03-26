@@ -67,27 +67,32 @@ export default function GamePage({ params }: GamePageProps) {
                 <p className="text-gray-900">{game.types.join(", ")}</p>
               </div>
             </div>
-            <div className="mb-6">
-              <h2 className="text-sm font-semibold text-gray-500 mb-2">Rating</h2>
-              <div className="flex items-center">
-                <span className="text-yellow-400 text-xl">★</span>
-                <span className="ml-1 text-gray-900">{game.rating}/10</span>
-              </div>
-            </div>
             <div>
               <h2 className="text-sm font-semibold text-gray-500 mb-2">Description</h2>
               <p className="text-gray-700 whitespace-pre-line">{game.description}</p>
             </div>
-            {game.bggUrl && (
-              <div className="mt-6">
-                <a
-                  href={game.bggUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-700"
-                >
-                  View on BoardGameGeek →
-                </a>
+            {(game.rulesUrl || game.videoUrl) && (
+              <div className="mt-6 space-y-2">
+                {game.rulesUrl && (
+                  <a
+                    href={game.rulesUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-blue-500 hover:text-blue-700"
+                  >
+                    View Rules PDF →
+                  </a>
+                )}
+                {game.videoUrl && (
+                  <a
+                    href={game.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-blue-500 hover:text-blue-700"
+                  >
+                    Watch Rules Video →
+                  </a>
+                )}
               </div>
             )}
           </div>
