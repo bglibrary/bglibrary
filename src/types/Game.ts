@@ -15,28 +15,28 @@ export type PlayerCount =
   | '5 à 8';
 
 export type GameCategory =
-  | 'speed'
-  | 'memory'
-  | 'bluff'
-  | 'luck'
-  | 'guessing'
-  | 'fun'
-  | 'adventure'
-  | 'management'
-  | 'optimisation'
-  | 'battle'
-  | 'fold'
-  | 'observation'
-  | 'knowledge';
+  | "adventure"
+  | "optimisation"
+  | "fold"
+  | "management"
+  | "speed"
+  | "observation"
+  | "bluff"
+  | "battle"
+  | "fun"
+  | "guessing"
+  | "knowledge"
+  | "luck"
+  | "memory";
 
 export type GameType =
-  | 'board'
-  | 'cards'
-  | 'dice'
-  | 'fast_rules'
-  | 'cooperation';
+  | "board"
+  | "cards"
+  | "cooperation"
+  | "fast_rules"
+  | "dice";
 
-export type GameDuration = 'short' | 'mid' | 'long';
+export type GameDuration = "short" | "mid" | "long";
 
 export interface Game {
   id: string;
@@ -54,4 +54,37 @@ export interface Game {
   addedDate: string;
   lastPlayed?: string;
   notes?: string;
-} 
+}
+
+// Mapping des catégories techniques vers leurs noms en français
+export const categoryLabels: Record<GameCategory, string> = {
+  adventure: "Aventure",
+  optimisation: "Optimisation",
+  fold: "Plis",
+  management: "Gestion & Dévelopement",
+  speed: "Rapidité",
+  observation: "Observation",
+  bluff: "Bluff",
+  battle: "Bataille",
+  fun: "Fun",
+  guessing: "Devinettes",
+  knowledge: "Connaissance",
+  luck: "Hasard",
+  memory: "Mémoire"
+};
+
+// Mapping des types techniques vers leurs noms en français
+export const typeLabels: Record<GameType, string> = {
+  board: "Plateau",
+  cards: "Cartes",
+  cooperation: "Coopératif",
+  fast_rules: "Règles rapides",
+  dice: "Dés"
+};
+
+// Mapping des durées techniques vers leurs noms en français
+export const durationLabels: Record<GameDuration, string> = {
+  short: "< 30min",
+  mid: "30-60min",
+  long: "> 60min"
+}; 

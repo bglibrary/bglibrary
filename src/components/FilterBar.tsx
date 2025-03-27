@@ -1,6 +1,6 @@
-import { GameCategory, GameType, GameDuration } from '@/types/Game';
+import { GameCategory, GameType, GameDuration, categoryLabels, typeLabels, durationLabels } from '@/types/Game';
 
-const CATEGORIES: GameCategory[] = ['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation'];
+const CATEGORIES: GameCategory[] = ['speed', 'memory', 'bluff', 'luck', 'guessing', 'fun', 'adventure', 'management', 'optimisation', 'battle', 'fold', 'observation', 'knowledge'];
 const TYPES: GameType[] = ['board', 'cards', 'dice', 'fast_rules', 'cooperation'];
 
 const playerCountOptions = [
@@ -94,9 +94,11 @@ export default function FilterBar({
               className="px-3 py-2 border border-indigo-200 rounded-md text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white/50"
             >
               <option value="">Toutes les durées</option>
-              <option value="short">Court (&lt; 30min)</option>
-              <option value="mid">Moyen (30-60min)</option>
-              <option value="long">Long (&gt; 60min)</option>
+              {Object.entries(durationLabels).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
             </select>
           </div>
         </div>
@@ -114,7 +116,7 @@ export default function FilterBar({
                   onChange={() => handleCategoryChange(category)}
                   className="rounded text-indigo-600 focus:ring-indigo-500"
                 />
-                <span className="ml-2 text-sm text-gray-700">{category}</span>
+                <span className="ml-2 text-sm text-gray-700">{categoryLabels[category]}</span>
               </label>
             ))}
           </div>
@@ -131,7 +133,7 @@ export default function FilterBar({
                   onChange={() => handleTypeChange(type)}
                   className="rounded text-indigo-600 focus:ring-indigo-500"
                 />
-                <span className="ml-2 text-sm text-gray-700">{type}</span>
+                <span className="ml-2 text-sm text-gray-700">{typeLabels[type]}</span>
               </label>
             ))}
           </div>
