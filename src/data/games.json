@@ -638,13 +638,14 @@
       "slug": "hanabi",
       "image": "/images/games/hanabi.png",
       "categories": [
-        "cooperation"
+        "optimisation",
+        "memory"
       ],
       "types": [
         "cards"
       ],
-      "duration": "mid",
-      "shortDescription": "Coopérez pour créer le plus beau feu d'artifice en donnant des indices sur vos cartes sans pouvoir les voir.",
+      "duration": "short",
+      "shortDescription": "Poser vos cartes pour former le plus beau feu d'artifice ! Cependant seul les autres peuvent voir votre jeu.",
       "addedDate": "2024-03-26",
       "playerMin": 2,
       "playerMax": 5
@@ -869,16 +870,19 @@
       "slug": "shabadabada",
       "image": "/images/games/shabadabada.jpg",
       "categories": [
-        "fun"
+        "fun",
+        "memory",
+        "guessing"
       ],
       "types": [
-        "cards"
+        "cards",
+        "fast_rules"
       ],
       "duration": "short",
-      "shortDescription": "Un jeu de mots où il faut trouver des mots qui correspondent aux critères demandés.",
+      "shortDescription": "Chantez le plus d'extrait de chanson qui contiennent un mot imposé.",
       "addedDate": "2024-03-26",
       "playerMin": 3,
-      "playerMax": 8
+      "playerMax": 12
     },
     {
       "id": "sky-my-husband",
@@ -903,13 +907,16 @@
       "slug": "sleeping-queens",
       "image": "/images/games/sleeping_queens.jpg",
       "categories": [
-        "luck"
+        "memory",
+        "luck",
+        "battle"
       ],
       "types": [
-        "cards"
+        "cards",
+        "fast_rules"
       ],
       "duration": "short",
-      "shortDescription": "Réveillez les reines endormies et collectez des points dans ce jeu de cartes pour enfants.",
+      "shortDescription": "Jeu de cartes où le but est de réveiller le plus de reines possible en collectionnant des cartes et en les utilisant pour les réveiller.",
       "addedDate": "2024-03-26",
       "playerMin": 2,
       "playerMax": 5
@@ -1060,16 +1067,18 @@
       "slug": "tropico",
       "image": "/images/games/tropico.jpg",
       "categories": [
-        "management"
+        "memory",
+        "observation"
       ],
       "types": [
-        "board"
+        "cards",
+        "fast_rules"
       ],
-      "duration": "mid",
-      "shortDescription": "Gérez votre île tropicale en développant son économie et en satisfaisant les besoins de vos habitants.",
+      "duration": "short",
+      "shortDescription": "Retenez les cartes qui s'emplilent et répondez correctement aux questions posées au fur et à mesure.",
       "addedDate": "2024-03-26",
       "playerMin": 2,
-      "playerMax": 4
+      "playerMax": 8
     },
     {
       "id": "twinz",
