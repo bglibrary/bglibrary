@@ -61,7 +61,7 @@ export default function FilterBar({
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 mb-8">
       <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-4 border border-indigo-100">
         <div className="flex flex-wrap gap-4">
           <div className="flex-1 min-w-[200px]">
@@ -109,15 +109,17 @@ export default function FilterBar({
           <h3 className="text-sm font-medium text-indigo-700 mb-2">Catégories</h3>
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((category) => (
-              <label key={category} className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  checked={selectedCategories.includes(category)}
-                  onChange={() => handleCategoryChange(category)}
-                  className="rounded text-indigo-600 focus:ring-indigo-500"
-                />
-                <span className="ml-2 text-sm text-gray-700">{categoryLabels[category]}</span>
-              </label>
+              <button
+                key={category}
+                onClick={() => handleCategoryChange(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                  selectedCategories.includes(category)
+                    ? 'bg-indigo-500 text-white shadow-md hover:bg-indigo-600'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {categoryLabels[category]}
+              </button>
             ))}
           </div>
         </div>
@@ -126,15 +128,17 @@ export default function FilterBar({
           <h3 className="text-sm font-medium text-indigo-700 mb-2">Types</h3>
           <div className="flex flex-wrap gap-2">
             {TYPES.map((type) => (
-              <label key={type} className="inline-flex items-center">
-                <input
-                  type="checkbox"
-                  checked={selectedTypes.includes(type)}
-                  onChange={() => handleTypeChange(type)}
-                  className="rounded text-indigo-600 focus:ring-indigo-500"
-                />
-                <span className="ml-2 text-sm text-gray-700">{typeLabels[type]}</span>
-              </label>
+              <button
+                key={type}
+                onClick={() => handleTypeChange(type)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                  selectedTypes.includes(type)
+                    ? 'bg-indigo-500 text-white shadow-md hover:bg-indigo-600'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                {typeLabels[type]}
+              </button>
             ))}
           </div>
         </div>
