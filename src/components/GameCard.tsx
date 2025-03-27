@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Game } from '@/types/Game';
-import { UserGroupIcon } from '@heroicons/react/24/outline';
+import { UserGroupIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 interface GameCardProps {
   game: Game;
@@ -10,6 +10,8 @@ export default function GameCard({ game }: GameCardProps) {
   const playerCountText = game.playerMin === game.playerMax 
     ? `${game.playerMin}`
     : `${game.playerMin} - ${game.playerMax}`;
+
+  const durationText = game.duration === 'short' ? '< 30min' : game.duration === 'mid' ? '30-60min' : '> 60min';
 
   return (
     <Link href={`/games/${game.slug}`}>
@@ -29,7 +31,10 @@ export default function GameCard({ game }: GameCardProps) {
               <span>{playerCountText}</span>
             </div>
             <span>•</span>
-            <span>{game.duration === 'short' ? '< 30min' : game.duration === 'mid' ? '30-60min' : '> 60min'}</span>
+            <div className="flex items-center space-x-1">
+              <ClockIcon className="w-4 h-4" />
+              <span>{durationText}</span>
+            </div>
           </div>
         </div>
       </div>
