@@ -27,8 +27,21 @@ export default function Home() {
 
   // Mélanger les jeux uniquement au chargement initial
   useEffect(() => {
-    setAllGames(shuffleArray(gamesData.games as Game[]));
-  }, []); // Tableau de dépendances vide = exécution uniquement au montage
+    const savedGames = sessionStorage.getItem('shuffledGames');
+    if (savedGames) {
+      setAllGames(JSON.parse(savedGames));
+    } else {
+      const shuffled = shuffleArray(gamesData.games as Game[]);
+      setAllGames(shuffled);
+      sessionStorage.setItem('shuffledGames', JSON.stringify(shuffled));
+    }
+  }, []);
+
+  const handleShuffle = () => {
+    const shuffled = shuffleArray(gamesData.games as Game[]);
+    setAllGames(shuffled);
+    sessionStorage.setItem('shuffledGames', JSON.stringify(shuffled));
+  };
 
   // Filtrer les jeux en fonction des critères sélectionnés
   useEffect(() => {
