@@ -26,16 +26,16 @@ export default async function GamePage({ params }: GamePageProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden border border-indigo-100">
-        <div className="md:flex">
-          <div className="md:w-1/2 relative aspect-square bg-gray-50">
-            <div className="absolute inset-0 flex items-center justify-center">
+        <div className="md:flex p-8">
+          <div className="md:w-1/3 flex items-center justify-center bg-gray-50">
+            <div className="relative w-[250px] h-[250px]">
               <Image
                 src={game.image}
                 alt={game.title}
-                width={500}
-                height={500}
+                fill
                 className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="250px"
+                priority
               />
             </div>
           </div>
